@@ -1,0 +1,36 @@
+.header{
+    background: #051d3b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 44px 32px;
+    &_search{
+        width: 33.33%;
+        input{
+            padding: 16px 14px;
+            background: rgba(#ffffff,0.5);
+            border: none;
+            border-radius: 8px;
+            color: #ffffff;
+            width: 100%;
+            &::placeholder{
+                color: #ffffff;
+            }
+        }
+    }
+    &_user{
+        display: flex;
+        align-items: center;
+        &_image{
+            border-radius: 50%;
+            margin-right: 8px;
+            overflow: hidden;
+            width: 32px;
+            height: 32px;
+        }
+        &_name{
+            color: #ffffff;
+            font-size: 16px;
+        }
+    }
+}

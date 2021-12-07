@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+.header {
+  background: #051d3b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 44px 32px;
+}
+
+.header_search {
+  width: 33.33%;
+}
+
+.header_search input {
+  padding: 16px 14px;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  width: 100%;
+}
+
+.header_search input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.header_search input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.header_search input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.header_search input::placeholder {
+  color: #ffffff;
+}
+
+.header_user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_user_image {
+  border-radius: 50%;
+  margin-right: 8px;
+  overflow: hidden;
+  width: 32px;
+  height: 32px;
+}
+
+.header_user_name {
+  color: #ffffff;
+  font-size: 16px;
+}
+/*# sourceMappingURL=style.css.map */
