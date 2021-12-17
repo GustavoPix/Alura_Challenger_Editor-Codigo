@@ -1,0 +1,13 @@
+.input{
+	padding: 16px 14px;
+	background: rgba(255, 255, 255, 0.16);
+	border-radius: 8px;
+	border: none;
+	color: #ffffff;
+	&::placeholder{
+		color: #ffffff;
+	}
+	&:active,&:hover{
+		background: rgba(255, 255, 255, 0.24);
+	}
+}

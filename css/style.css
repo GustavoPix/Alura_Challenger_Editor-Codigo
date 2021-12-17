@@ -1,10 +1,5 @@
-.title {
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.text {
-  color: #ffffff;
+body {
+  background: #051D3B;
 }
 
 * {
@@ -20,99 +15,31 @@
   outline: none;
 }
 
-.header {
-  background: #051d3b;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 20px 32px;
-}
-
-.header_search {
-  width: 752px;
-  max-width: calc(100% - 350px);
-}
-
-.header_search input {
+.input {
   padding: 16px 14px;
-  background: rgba(255, 255, 255, 0.5);
-  border: none;
+  background: rgba(255, 255, 255, 0.16);
   border-radius: 8px;
-  color: #ffffff;
-  width: 100%;
-}
-
-.header_search input::-webkit-input-placeholder {
+  border: none;
   color: #ffffff;
 }
 
-.header_search input:-ms-input-placeholder {
+.input::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-.header_search input::-ms-input-placeholder {
+.input:-ms-input-placeholder {
   color: #ffffff;
 }
 
-.header_search input::placeholder {
+.input::-ms-input-placeholder {
   color: #ffffff;
 }
 
-.header_user {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header_user_image {
-  border-radius: 50%;
-  margin-right: 8px;
-  overflow: hidden;
-  width: 32px;
-  height: 32px;
-}
-
-.header_user_name {
+.input::placeholder {
   color: #ffffff;
-  font-size: 16px;
 }
 
-.app {
-  background: #051d3b;
-  padding: 20px 32px;
-}
-
-.app .title {
-  margin-bottom: 16px;
-}
-
-.app_left_menu_item {
-  margin-bottom: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.app_left_menu_item_icon {
-  padding: 16px;
-  background: #112d5a;
-  border-radius: 16px;
-  margin-right: 16px;
-}
-
-.app_left_menu_item .active {
-  background: #5081fb;
+.input:active, .input:hover {
+  background: rgba(255, 255, 255, 0.24);
 }
 /*# sourceMappingURL=style.css.map */
