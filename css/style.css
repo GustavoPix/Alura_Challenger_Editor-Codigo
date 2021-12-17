@@ -88,4 +88,26 @@ body {
 .button1:focus {
   background: #96B9FD;
 }
+
+.button2 {
+  padding: 16px;
+  background: #0b254a;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.button2:hover {
+  background: #112d5a;
+}
+
+.button2:active {
+  background: #0b254a;
+  border: 4px solid #173569;
+}
+
+.button2:focus {
+  background: #173569;
+}
 /*# sourceMappingURL=style.css.map */
