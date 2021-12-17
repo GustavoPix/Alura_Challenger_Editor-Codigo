@@ -42,4 +42,25 @@ body {
 .input:active, .input:hover {
   background: rgba(255, 255, 255, 0.24);
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown .input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.dropdown_icon {
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 16px;
+}
+
+.dropdown:hover .input {
+  background: rgba(255, 255, 255, 0.24);
+}
 /*# sourceMappingURL=style.css.map */

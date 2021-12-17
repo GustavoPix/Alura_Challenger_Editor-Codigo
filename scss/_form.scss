@@ -11,3 +11,23 @@
 		background: rgba(255, 255, 255, 0.24);
 	}
 }
+
+.dropdown{
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	.input{
+		width: 100%;
+		padding-right: 40px;
+	}
+	&_icon{
+		position: absolute;
+		top: calc(50% - 2px);
+		right: 16px;
+	}
+	&:hover{
+		.input{
+			background: rgba(255, 255, 255, 0.24);
+		}
+	}
+}
