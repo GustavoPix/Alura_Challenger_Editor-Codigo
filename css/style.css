@@ -75,6 +75,7 @@ body {
   border-radius: 8px;
   color: #051D3B;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .button1:hover {
@@ -96,6 +97,7 @@ body {
   border-radius: 8px;
   color: #ffffff;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .button2:hover {
@@ -125,5 +127,57 @@ body {
 
 .buttonMenu:active {
   background: #112d5a;
+}
+
+.itemMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: none;
+  border: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.itemMenu .buttonMenu {
+  background: #112d5a;
+  margin-right: 16px;
+}
+
+.itemMenu .buttonMenu img {
+  opacity: 0.5;
+}
+
+.itemMenu_text {
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.itemMenu:hover .buttonMenu {
+  background: #5081FB;
+  opacity: 0.64;
+}
+
+.itemMenu:hover .buttonMenu img {
+  opacity: 1;
+}
+
+.itemMenu:hover .itemMenu_text {
+  opacity: 1;
+}
+
+.itemMenu_active .buttonMenu {
+  background: #5081FB;
+}
+
+.itemMenu_active .buttonMenu img {
+  opacity: 1;
+}
+
+.itemMenu_active .itemMenu_text {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */

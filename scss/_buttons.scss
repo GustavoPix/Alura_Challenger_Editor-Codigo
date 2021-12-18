@@ -5,6 +5,7 @@
 	border-radius: 8px;
 	color: $color4;
 	cursor: pointer;
+	font-size: 16px;
 	&:hover{
 		background: $color2;
 	}
@@ -23,6 +24,7 @@
 	border-radius: 8px;
 	color: #ffffff;
 	cursor: pointer;
+	font-size: 16px;
 	&:hover{
 		background: $color6;
 	}
@@ -46,5 +48,49 @@
 	}
 	&:active{
 		background: $color6;
+	}
+}
+
+.itemMenu{
+	display: flex;
+	background: none;
+	border: none;
+	align-items: center;
+	cursor: pointer;
+	.buttonMenu{
+		background: $color6;
+		img{
+			opacity: 0.5;
+		}
+		margin-right: 16px;
+	}
+	&_text{
+		font-size: 16px;
+		color: #ffffff;
+		opacity: 0.5;
+	}
+	&:hover{
+		.buttonMenu{
+			background: $color3;
+			opacity: 0.64;
+			img{
+				opacity: 1;
+			}
+		}
+		.itemMenu_text{
+			opacity: 1;
+		}
+	}
+	&_active{
+		.buttonMenu{
+			background: $color3;
+			img{
+				opacity: 1;
+			}
+
+		}
+		.itemMenu_text{
+			opacity: 1;
+		}
 	}
 }
