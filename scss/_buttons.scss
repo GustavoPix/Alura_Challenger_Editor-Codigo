@@ -34,3 +34,17 @@
 		background: $color7;
 	}
 }
+
+.buttonMenu{
+	padding: 14px 15px;
+	background: none;
+	border: none;
+	border-radius: 16px;
+	cursor: pointer;
+	&:hover{
+		background: $color5;
+	}
+	&:active{
+		background: $color6;
+	}
+}

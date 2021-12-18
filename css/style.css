@@ -110,4 +110,20 @@ body {
 .button2:focus {
   background: #173569;
 }
+
+.buttonMenu {
+  padding: 14px 15px;
+  background: none;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.buttonMenu:hover {
+  background: #0b254a;
+}
+
+.buttonMenu:active {
+  background: #112d5a;
+}
 /*# sourceMappingURL=style.css.map */
