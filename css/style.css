@@ -180,4 +180,51 @@ body {
 .itemMenu_active .itemMenu_text {
   opacity: 1;
 }
+
+.viewComment {
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  padding: 10px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.viewComment_img {
+  margin-right: 10px;
+}
+
+.viewComment_img_desactive {
+  display: block;
+}
+
+.viewComment_img_active {
+  display: none;
+}
+
+.viewComment_text {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.viewComment:hover {
+  background: #192f4a;
+}
+
+.viewComment:active {
+  background: #2d415b;
+}
+
+.viewComment_active .viewComment_img_desactive {
+  display: none;
+}
+
+.viewComment_active .viewComment_img_active {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */

@@ -94,3 +94,42 @@
 		}
 	}
 }
+
+.viewComment{
+	background: none;
+	display: flex;
+	align-items: center;
+	border: none;
+	padding: 10px;
+	border-radius: 16px;
+	cursor: pointer;
+	&_img{
+		margin-right: 10px;
+		&_desactive{
+			display: block;
+		}
+		&_active{
+			display: none;
+		}
+	}
+	&_text{
+		color: #ffffff;
+		font-size: 16px;
+	}
+	&:hover{
+		background: $color8;
+	}
+	&:active{
+		background: $color9;
+	}
+	&_active{
+		.viewComment_img{
+			&_desactive{
+				display: none;
+			}
+			&_active{
+				display: block;
+			}
+		}
+	}
+}
