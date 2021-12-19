@@ -1,0 +1,60 @@
+.cardProject{
+	background: $color10;
+	border-radius: 8px;
+	&_main{
+		background: #9AFF6B;
+		padding: 24px;
+		border-radius: 8px;
+		&_code{
+			background: $color11;
+			padding: 12px;
+			border-radius: 8px;
+			&_header{
+				display: flex;
+				&_bullet{
+					width: 9px;
+					height: 9px;
+					border-radius: 50%;
+					margin-right: 6px;
+				}
+			}
+			&_code{
+				color: #ffffff;
+				font-family: 'Roboto Mono', monospace;
+				font-size: 11px;
+				line-height: 14.51px;
+				white-space: pre;
+			}
+		}
+	}
+	&_social{
+		padding: 24px;
+		&_title{
+			color: #ffffff;
+			font-size: 21px;
+			font-weight: 700;
+			margin-bottom: 8px;
+		}
+		&_description{
+			color: #ffffff;
+			font-size: 16px;
+			font-weight: 400;
+
+		}
+		&_buttons{
+			display: none;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 32px;
+			&_likes{
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+	&:hover{
+		.cardProject_social_buttons{
+			display: flex;
+		}
+	}
+}

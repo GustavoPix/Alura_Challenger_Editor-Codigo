@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>CardProject</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+	<link rel='stylesheet' type='text/css' media='screen' href='/css/style.css'>
+</head>
+<body>
+	<div class="cardProject">
+		<div class="cardProject_main">
+			<div class="cardProject_main_code">
+				<ul class="cardProject_main_code_header">
+					<li class="cardProject_main_code_header_bullet bg-red"></li>
+					<li class="cardProject_main_code_header_bullet bg-yellow"></li>
+					<li class="cardProject_main_code_header_bullet bg-green"></li>
+				</ul>
+				<div class="cardProject_main_code_code">
+<code>const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+const unfold = (f, seed) => {
+  const go = (f, seed, acc) => {
+	const res = f(seed)
+	return res ? go(f, res[1], acc.concat([res[0]])) : acc
+  }
+  return go(f, seed, [])
+}</code>
+				</div>
+			</div>
+		</div>
+		<div class="cardProject_social">
+			<h3 class="cardProject_social_title">Título do projeto</h3>
+			<h4 class="cardProject_social_description">Essa é a descrição do meu projeto.</h4>
+			<div class="cardProject_social_buttons">
+				<div class="cardProject_social_buttons_likes">
+					<button class="viewComment">
+						<div class="viewComment_img">
+							<img src="/img/comment.svg" alt="">
+						</div>
+						<p class="viewComment_text">9</p>
+					</button>
+					<button class="viewComment">
+						<div class="viewComment_img">
+							<img class="viewComment_img_desactive" src="/img/hearth.svg" alt="">
+							<img class="viewComment_img_active" src="/img/hearth_active.svg" alt="">
+						</div>
+						<p class="viewComment_text">9</p>
+					</button>
+				</div>
+				<div>
+					<button class="userButton">
+						<div class="userButton_img">
+							<img src="https://picsum.photos/32" alt="">
+						</div>
+						<p class="userButton_text">Gustavo</p>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
