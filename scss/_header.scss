@@ -1,0 +1,44 @@
+.header{
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	max-width: 1440px;
+	justify-content: space-between;
+	padding: 32px;
+	&_search{
+		width: 100%;
+		max-width: 752px;
+		input{
+			width: 100%;
+			box-sizing: border-box;
+		}
+	}
+	&_logo{
+		padding: 12px;
+	}
+	&_btnMenu{
+		display: none;
+	}
+}
+
+@media (max-width: 1439px) {
+	.header{
+		&_user{
+			display: none;
+		}
+		&_btnMenu{
+			display: block;
+		}
+	}
+}
+
+@media (max-width: 379px) {
+	.header{
+		&_search{
+			display: none;
+		}
+		&_btnSearch{
+			display: block;
+		}
+	}
+}
