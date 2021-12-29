@@ -1,0 +1,33 @@
+.home{
+	display: flex;
+	justify-content: space-between;
+	&_main{
+		flex: 1;
+		max-width: 752px;
+		> .cardProject{
+			margin-bottom: 32px;
+		}
+		> button{
+			width: 100%;
+		}
+	}
+	&_infoProjeto{
+		width: 312px;
+		padding-left: 40px;
+		&_section{
+			margin-bottom: 40px;
+			> .input, > .dropdown{
+				display: block;
+				width: 100%;
+				margin-bottom: 16px;
+			}
+			.colorPicker{
+				margin-bottom: 32px;
+			}
+			button{
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+}

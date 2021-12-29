@@ -30,6 +30,7 @@ body {
   border-radius: 8px;
   border: none;
   color: #ffffff;
+  resize: none;
 }
 
 .input::-webkit-input-placeholder {
@@ -275,6 +276,18 @@ body {
   background: #192f4a;
 }
 
+.colorPicker {
+  border: 1px solid #ffffff;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.colorPicker_inside {
+  height: 40px;
+  background: #96B9FD;
+  border-radius: 4px;
+}
+
 .cardProject {
   background: #041832;
   border-radius: 8px;
@@ -492,6 +505,54 @@ body {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home_main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 752px;
+}
+
+.home_main > .cardProject {
+  margin-bottom: 32px;
+}
+
+.home_main > button {
+  width: 100%;
+}
+
+.home_infoProjeto {
+  width: 312px;
+  padding-left: 40px;
+}
+
+.home_infoProjeto_section {
+  margin-bottom: 40px;
+}
+
+.home_infoProjeto_section > .input, .home_infoProjeto_section > .dropdown {
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.home_infoProjeto_section .colorPicker {
+  margin-bottom: 32px;
+}
+
+.home_infoProjeto_section button {
+  display: block;
+  width: 100%;
 }
 
 .bg-red {

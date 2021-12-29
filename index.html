@@ -5,10 +5,150 @@
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 	<title>Page Title</title>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
-	<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='/css/style.css'>
 	<script src='main.js'></script>
 </head>
 <body>
+	<header class="header container">
+		<div class="header_logo">
+			<img src="/img/logo.svg" alt="">
+		</div>
+		<div class="header_search">
+			<input type="text" class="input" placeholder="Label">
+		</div>
+		<div class="header_btnSearch">
+			<button class="buttonMenu">
+				<img src="/img/lenteAumento.svg" alt="">
+			</button>
+		</div>
+		<div class="header_user">
+			<button class="userButton">
+				<div class="userButton_img">
+					<img src="https://picsum.photos/32" alt="">
+				</div>
+				<p class="userButton_text">Gustavo</p>
+			</button>
+		</div>
+		<div class="header_btnMenu">
+			<button class="buttonMenu">
+				<img src="/img/hamburger.svg" alt="">
+			</button>
+		</div>
+	</header>
+	<div class="container home">
+		<nav class="menu">
+			<p class="menu_title">Menu</p>
+			<ul class="menu_list">
+				<li class="menu_list_item">
+					<button class="itemMenu itemMenu_active">
+						<div class="buttonMenu">
+							<img src="/img/code.svg" alt="">
+						</div>
+						<p class="itemMenu_text">Editor de código</p>
+					</button>
+				</li>
+				<li class="menu_list_item">
+					<button class="itemMenu">
+						<div class="buttonMenu">
+							<img src="/img/comunidade.svg" alt="">
+						</div>
+						<p class="itemMenu_text">Comunidade</p>
+					</button>
+				</li>
+			</ul>
+			<div class="menu_user">
+				<button class="userButton">
+					<div class="userButton_img">
+						<img src="https://picsum.photos/32" alt="">
+					</div>
+					<p class="userButton_text">Gustavo</p>
+				</button>
+			</div>
+		</nav>
+		<div class="mobile_search">
+			<div class="mobile_search_input">
+				<input type="text" class="input" placeholder="Label">
+			</div>
+			<div class="mobile_search_close">
+				<button class="buttonMenu">
+					<img src="/img/hamburger.svg" alt="">
+				</button>
+			</div>
+		</div>
+		<main class="home_main">
+			<div class="cardProject">
+				<div class="cardProject_main">
+					<div class="cardProject_main_code">
+						<ul class="cardProject_main_code_header">
+							<li class="cardProject_main_code_header_bullet bg-red"></li>
+							<li class="cardProject_main_code_header_bullet bg-yellow"></li>
+							<li class="cardProject_main_code_header_bullet bg-green"></li>
+						</ul>
+						<div class="cardProject_main_code_code">
+<code>const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+const unfold = (f, seed) => {
+  const go = (f, seed, acc) => {
+	const res = f(seed)
+	return res ? go(f, res[1], acc.concat([res[0]])) : acc
+  }
+  return go(f, seed, [])
+}</code>
+						</div>
+					</div>
+				</div>
+				<div class="cardProject_social">
+					<h3 class="cardProject_social_title">Título do projeto</h3>
+					<h4 class="cardProject_social_description">Essa é a descrição do meu projeto.</h4>
+					<div class="cardProject_social_buttons">
+						<div class="cardProject_social_buttons_likes">
+							<button class="viewComment">
+								<div class="viewComment_img">
+									<img src="/img/comment.svg" alt="">
+								</div>
+								<p class="viewComment_text">9</p>
+							</button>
+							<button class="viewComment">
+								<div class="viewComment_img">
+									<img class="viewComment_img_desactive" src="/img/hearth.svg" alt="">
+									<img class="viewComment_img_active" src="/img/hearth_active.svg" alt="">
+								</div>
+								<p class="viewComment_text">9</p>
+							</button>
+						</div>
+						<div>
+							<button class="userButton">
+								<div class="userButton_img">
+									<img src="https://picsum.photos/32" alt="">
+								</div>
+								<p class="userButton_text">Gustavo</p>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="button2">Visualizar com o highlight</button>
+		</main>
+		<div class="home_infoProjeto">
+			<div class="home_infoProjeto_section">
+				<p class="menu_title">Seu Projeto</p>
+				<input class="input" type="text" placeholder="Nome do seu projeto">
+				<textarea class="input" placeholder="Descrição do projeto"></textarea>
+			</div>
+			<div class="home_infoProjeto_section">
+				<p class="menu_title">Personalização</p>
+				<div class="dropdown">
+					<p class="input">Javascript</p>
+					<img src="/img/arrow_down.svg" class="dropdown_icon">
+				</div>
+				<div class="colorPicker">
+					<div class="colorPicker_inside"></div>
+				</div>
+				<button class="button1">Salvar projeto</button>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
