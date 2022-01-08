@@ -56,6 +56,9 @@ body {
 .dropdown {
   position: relative;
   display: inline-block;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   cursor: pointer;
 }
 
@@ -323,7 +326,7 @@ body {
   font-family: 'Roboto Mono', monospace;
   font-size: 11px;
   line-height: 14.51px;
-  white-space: pre;
+  white-space: pre-wrap;
 }
 
 .cardProject_social {
@@ -553,6 +556,71 @@ body {
 .home_infoProjeto_section button {
   display: block;
   width: 100%;
+}
+
+.home_infoProjeto_line > .input, .home_infoProjeto_line > .dropdown {
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 1439px) {
+  .home {
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .home_main {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .home_infoProjeto {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .home_infoProjeto .menu_title {
+    display: block;
+  }
+  .home_infoProjeto_line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 32px;
+  }
+  .home_infoProjeto_line > .input, .home_infoProjeto_line > .dropdown {
+    width: calc(50% - 8px);
+    margin-bottom: 0px;
+  }
+  .home_infoProjeto_line .colorPicker {
+    width: calc(50% - 8px);
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 379px) {
+  .home_infoProjeto_line {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .home_infoProjeto_line > .input, .home_infoProjeto_line > .dropdown {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .home_infoProjeto_line .colorPicker {
+    width: 100%;
+  }
 }
 
 .bg-red {

@@ -29,5 +29,65 @@
 				width: 100%;
 			}
 		}
+		&_line{
+			> .input, > .dropdown{
+				display: block;
+				width: 100%;
+				margin-bottom: 16px;
+			}
+		}
 	}
+}
+
+@media (max-width: 1439px) {
+	.home{
+		justify-content: stretch;
+		flex-direction: column;
+		padding-left: 32px;
+		padding-right: 32px;
+		&_main{
+			max-width: 100%;
+			margin-bottom: 40px;
+		}
+		&_infoProjeto{
+			width: 100%;
+			padding-left: 0px;
+			.menu_title{
+				display: block;
+			}
+
+			&_line{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 32px;
+				> .input, > .dropdown{
+					width: calc(50% - 8px);
+					margin-bottom: 0px;
+				}
+				.colorPicker{
+					width: calc(50% - 8px);
+					margin-bottom: 0px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 379px) {
+	.home{
+		&_infoProjeto{
+			&_line{
+				flex-wrap: wrap;
+				> .input, > .dropdown{
+					width: 100%;
+					margin-bottom: 16px;
+				}
+				.colorPicker{
+					width: 100%;
+				}
+			}
+		}
+	}
+
 }
