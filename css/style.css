@@ -366,7 +366,7 @@ body {
           align-items: center;
 }
 
-.cardProject:hover .cardProject_social_buttons {
+.cardProject:hover .cardProject_social_buttons, .cardProject_open .cardProject_social_buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -621,6 +621,44 @@ body {
   .home_infoProjeto_line .colorPicker {
     width: 100%;
   }
+}
+
+.comunidade {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(100vh - 128px);
+  overflow-y: auto;
+}
+
+.comunidade .menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 344px;
+}
+
+.comunidade_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 18px;
+}
+
+.comunidade_main .cardProject {
+  margin-right: 24px;
+  margin-bottom: 24px;
+  width: 100%;
+  max-width: 500px;
+}
+
+body {
+  overflow: hidden;
 }
 
 .bg-red {

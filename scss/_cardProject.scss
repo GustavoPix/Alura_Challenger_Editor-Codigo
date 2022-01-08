@@ -52,7 +52,7 @@
 			}
 		}
 	}
-	&:hover{
+	&:hover, &_open{
 		.cardProject_social_buttons{
 			display: flex;
 		}

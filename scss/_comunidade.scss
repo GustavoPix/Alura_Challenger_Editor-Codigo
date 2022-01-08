@@ -1,0 +1,23 @@
+.comunidade{
+	display: flex;
+	height: calc(100vh - 128px);
+	overflow-y: auto;
+	.menu{
+		flex: 1;min-width: 344px;
+	}
+	&_main{
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		padding-left: 18px;
+		.cardProject{
+			margin-right: 24px;
+			margin-bottom: 24px;
+			width: 100%;
+			max-width: 500px;
+		}
+	}
+}
+body{
+	overflow: hidden;
+}
