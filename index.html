@@ -6,6 +6,8 @@
 	<title>Page Title</title>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel='stylesheet' type='text/css' media='screen' href='/css/style.css'>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
 	<script src='main.js'></script>
 </head>
 <body>
@@ -89,7 +91,7 @@
 							<li class="cardProject_main_code_header_bullet bg-green"></li>
 						</ul>
 						<div class="cardProject_main_code_code">
-<code>const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+<pre><code class="language-javascript">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
 const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
 
@@ -99,7 +101,7 @@ const unfold = (f, seed) => {
 	return res ? go(f, res[1], acc.concat([res[0]])) : acc
   }
   return go(f, seed, [])
-}</code>
+}</code></pre>
 						</div>
 					</div>
 				</div>
@@ -133,7 +135,7 @@ const unfold = (f, seed) => {
 					</div>
 				</div>
 			</div>
-			<button class="button2">Visualizar com o highlight</button>
+			<button class="button2" id="buttonHighlight">Visualizar com o highlight</button>
 		</main>
 		<div class="home_infoProjeto">
 			<div class="home_infoProjeto_section">
@@ -156,5 +158,6 @@ const unfold = (f, seed) => {
 			</div>
 		</div>
 	</div>
+	<script src="/js/main.js"></script>
 </body>
 </html>

@@ -310,6 +310,7 @@ a {
   background: #141414;
   padding: 12px;
   border-radius: 8px;
+  color: #ffffff;
 }
 
 .cardProject_main_code_header {
@@ -326,7 +327,6 @@ a {
 }
 
 .cardProject_main_code_code {
-  color: #ffffff;
   font-family: 'Roboto Mono', monospace;
   font-size: 11px;
   line-height: 14.51px;
@@ -675,5 +675,9 @@ body {
 
 .bg-yellow {
   background: #FFBD2E;
+}
+
+.hljs {
+  background: none !important;
 }
 /*# sourceMappingURL=style.css.map */
