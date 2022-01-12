@@ -2,7 +2,6 @@
 	background: $color10;
 	border-radius: 8px;
 	&_main{
-		background: #9AFF6B;
 		padding: 24px;
 		border-radius: 8px;
 		&_code{
@@ -56,5 +55,20 @@
 		.cardProject_social_buttons{
 			display: flex;
 		}
+	}
+}
+
+.backgroundProject{
+	&_1{
+		background: $projectColor1;
+	}
+	&_2{
+		background: $projectColor2;
+	}
+	&_3{
+		background: $projectColor3;
+	}
+	&_4{
+		background: $projectColor4;
 	}
 }
